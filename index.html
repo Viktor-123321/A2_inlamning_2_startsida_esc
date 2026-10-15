@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Escape Rooms</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header class="header">
@@ -11,23 +12,59 @@
             <img class="logo__img" />
             <h1 class="logo__header">Hacker Escape Rooms</h1>
         </div>
-        <div class="hamburger">
-            <div class="hamburger__top"></div>
-            <div class="hamburger__middle"></div>
-            <div class="hamburger__bottom"></div>
-        </div>
+        <button class="hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+        </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item">Play online</li>
-                <li class="nav__item">Play on-site</li>
-                <li class="nav__item">The story</li>
-                <li class="nav__item">Contact us</li>
+                <li class="nav__item">
+                    <a class="nav__link">
+                        Play online
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">
+                        Play on-site
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">
+                        The story
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link">
+                        Contact us
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section class="hero">
+            <img class="hero__img" />
+            <div class="challenges">
+                <a class="challenges__online-btn"></a>
+                <a class="challenges__onsite-btn challenges__onsite-btn--link"></a>
+            </div>
+        </section>
 
+        <section class="quotes">
+            <img class="quotes__img" />
+            <div class="quotes__text">
+                <p class="quotes__quote">
+                    This is a quote about how amazing this 
+                    place is and how much fun me and my friends 
+                    had when we tried it
+                </p>
+                <p class="quotes__author">
+                    John Doe, visited us in September<br>2021
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
