@@ -13,9 +13,9 @@
             <h1 class="logo__header">Hacker Escape Rooms</h1>
         </div>
         <button class="hamburger">
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
@@ -43,7 +43,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section class="hero">
             <img class="hero__img" src="./images/hero.jpg" alt="Hero" />
             <div class="challenge-links">
@@ -54,7 +54,7 @@
 
         <section class="quotes">
             <article class="quote-card">
-                <img class="quote-card__img" />
+                <img class="quote-card__img" src="./images/john_doe.jpg" alt="John Doe" />
                 <div class="quote-card__text">
                     <p class="quote-card__quote">
                         This is a quote about how amazing this 
@@ -67,7 +67,7 @@
                 </div>
             </article>
             <article class="quote-card">
-                <img class="quote-card__img" />
+                <img class="quote-card__img" src="./images/john_doe.jpg" alt="John Doe" />
                 <div class="quote-card__text">
                     <p class="quote-card__quote">
                         This is a quote about how amazing this 
@@ -93,7 +93,7 @@
                             <span class="challenge-card__star">&#x2605;</span>
                             <span class="challenge-card__star">&#x2605;</span>
                             <span class="challenge-card__star">&#x2605;</span>
-                            <span class="challenge-card__star challenges-card__star--empty">&#x2605;</span>
+                            <span class="challenge-card__star challenge-card__star--empty">&#x2605;</span>
                         </div>
                         <p class="challenge-card__participants">2-6 participants</p>
                     </div>
@@ -154,9 +154,51 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer__site-info">
+            <h2 class="footer__header">[Esc] Hacker Escape Rooms</h2>
+            <p class="footer__info-text">
+                Quodsi haberent magnalia inter potentiam et divitias, et 
+                non illam quidem haec eo spectant haec quoque vos omnino 
+                desit illud quo solo felicitatis libertatisque perficiuntur.
+            </p>
+        </div>
 
+        <nav class="footer__site-map">
+            <h2 class="footer__header">Site map</h2>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link">The Story</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Contact Us</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Legal</a>
+                </li>
+                <li class="footer__item footer__item--top-space">
+                    <a class="footer__link">Play online</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Play on-site</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="footer__follow-us">
+            <h2 class="footer__header">Follow us on</h2>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link">Facebook</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Instagram</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link">Twitter</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
-</body>
 </body>
 </html>
