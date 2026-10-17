@@ -1,0 +1,21 @@
+{
+  "name": "a2_inlamning_2_startsida_esc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/styles.scss output.css",
+    "watch": "sass --watch src/styles.scss output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-school:Viktor-123321/A2_inlamning_2_startsida_esc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "^1.105.2"
+  }
+}
