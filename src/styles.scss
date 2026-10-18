@@ -1,5 +1,6 @@
 @use 'sections/header';
 @use 'sections/main/hero.scss';
+@use 'sections/main/quotes.scss';
 
 * {
     box-sizing: border-box;
@@ -14,4 +15,11 @@ html {
 
 body {
     font-family: "Roboto", "Arial", sans-serif;
+}
+
+.challenge-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }

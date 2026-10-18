@@ -1,0 +1,8 @@
+@use '../../lib.scss' as *;
+
+.hero {
+    &__img {
+        width: 100%;
+        margin-bottom: 37px;
+    }
+}

@@ -1,0 +1,33 @@
+@use '../../lib.scss' as *;
+
+.quotes {
+    margin: 70px 20px;
+}
+
+.quote-card {
+    display: flex;
+    gap: 25px;
+
+    &__img {
+        width: 73px;
+        height: 72px;
+    }
+
+    &__text {
+        
+    }
+
+    &__quote {
+        font-size: $big-text;
+        font-style: $font-style;
+    }
+
+    &__author {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+}
+
+.quote-card:nth-child(even) {
+    display: none;
+}
