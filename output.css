@@ -1,5 +1,91 @@
-h1 {
-  color: blue;
+.btn {
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn--primary {
+  border: 1px solid #E3170A;
+  background-color: #E3170A;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px 45px;
+}
+.btn--on-site {
+  border: 1px solid #8ACFE5;
+  background-color: #8ACFE5;
+  color: #011827;
+  font-size: 24px;
+  padding: 10px 45px;
+}
+.btn--book {
+  border: 1px solid #E3170A;
+  background-color: #E3170A;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 6px 28px;
+}
+.btn--story {
+  border: 1px solid #8ACFE5;
+  background-color: #011827;
+  color: #8ACFE5;
+  font-size: 24px;
+  padding: 10px 45px;
+}
+
+.header {
+  background-color: #011827;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.logo__img {
+  width: 128px;
+  height: 82px;
+}
+.logo__header {
+  font-size: 1.5rem;
+  width: 78px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 7px;
+  width: 51px;
+  height: 35px;
+}
+.hamburger__line {
+  height: 7px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.nav {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  width: 480px;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */

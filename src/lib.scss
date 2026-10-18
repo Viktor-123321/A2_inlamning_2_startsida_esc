@@ -1,0 +1,48 @@
+// colors
+$color-red: #E3170A;
+$color-dark: #011827;
+$color-light: #ffffff;
+$color-gray: #B6BDB5;
+$color-blue: #36769D;
+$color-lightBlue: #8ACFE5;
+
+// text styles
+$font-weight: bold;
+$font-style: italic;
+$big-text: 24px;
+$small-text: 16px;
+$big-padding: 10px 45px;
+$small-padding: 6px 28px;
+
+// mixins
+@mixin btn($border: $color-red, $bg: $color-red, $text: $color-light, $size: $big-text, $padding: $big-padding) {
+    border: 1px solid $border;
+    background-color: $bg;
+    color: $text;
+    font-size: $size;
+    padding: $padding;
+}
+
+// buttons
+.btn {
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+
+    &--primary {
+        @include btn;
+    }
+
+    &--on-site {
+        @include btn($color-lightBlue, $color-lightBlue, $color-dark);
+    }
+
+    &--book {
+        @include btn($size: $small-text, $padding: $small-padding);
+    }
+
+    &--story {
+        @include btn($color-lightBlue, $color-dark, $color-lightBlue);
+        
+    }
+}

@@ -1,0 +1,45 @@
+@use '../lib' as *;
+
+.header {
+    background-color: $color-dark;
+    color: $color-light;
+    font-weight: $font-weight;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    &__img {
+        width: 128px;
+        height: 82px;
+    }
+
+    &__header {
+        font-size: 1.5rem;
+        width: 78px;
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 7px;
+    width: 51px;
+    height: 35px;
+
+    &__line {
+        height: 7px;
+        background-color: $color-light;
+        border-radius: 15px;
+    }
+}
+
+.nav {
+    display: none;
+}
