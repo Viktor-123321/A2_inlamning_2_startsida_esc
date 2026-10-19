@@ -23,6 +23,13 @@ $small-padding: 6px 28px;
     padding: $padding;
 }
 
+@mixin flex-base($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 // buttons
 .btn {
     font-weight: bold;
@@ -43,6 +50,6 @@ $small-padding: 6px 28px;
 
     &--story {
         @include btn($color-lightBlue, $color-dark, $color-lightBlue);
-        
+
     }
 }
