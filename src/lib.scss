@@ -11,8 +11,8 @@ $font-weight: bold;
 $font-style: italic;
 $big-text: 24px;
 $small-text: 16px;
-$big-padding: 10px 45px;
-$small-padding: 6px 28px;
+$big-padding: 12px 45px;
+$small-padding: 9px 28px;
 
 // mixins
 @mixin btn($border: $color-red, $bg: $color-red, $text: $color-light, $size: $big-text, $padding: $big-padding) {
@@ -46,6 +46,7 @@ $small-padding: 6px 28px;
 
     &--book {
         @include btn($size: $small-text, $padding: $small-padding);
+        align-self: flex-end;
     }
 
     &--story {
