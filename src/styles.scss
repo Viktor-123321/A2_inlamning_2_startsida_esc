@@ -1,8 +1,11 @@
 @use 'lib.scss' as *;
 @use 'sections/header';
-@use 'sections/main/hero.scss';
-@use 'sections/main/quotes.scss';
-@use 'sections/main/popular-challenges.scss';
+@use 'sections/main/hero';
+@use 'sections/main/quotes';
+@use 'sections/main/popular-challenges';
+@use 'sections/main/story';
+@use 'sections/main/play';
+@use 'sections/footer';
 
 * {
     box-sizing: border-box;

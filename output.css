@@ -52,7 +52,7 @@
   height: 82px;
 }
 .logo__header {
-  font-size: 1.5rem;
+  font-size: 24px;
   width: 78px;
 }
 
@@ -170,6 +170,71 @@
 
 .challenge-card:nth-child(3) {
   display: none;
+}
+
+.story {
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #011827;
+}
+.story__text {
+  color: #ffffff;
+  padding: 10px 10px 40px;
+  font-size: 28px;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.play__img {
+  width: 100%;
+}
+.play__header {
+  font-size: 32px;
+}
+.play__info {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px 20px 50px;
+}
+.play__text {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #011827;
+  color: #ffffff;
+  font-size: 18px;
+}
+.footer__header {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.footer__item {
+  list-style-type: none;
+}
+.footer__item--top-space {
+  margin-top: 20px;
 }
 
 * {

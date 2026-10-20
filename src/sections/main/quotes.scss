@@ -18,13 +18,13 @@
     }
 
     &__quote {
-        font-size: $big-text;
+        font-size: $medium-text;
         font-style: $font-style;
     }
 
     &__author {
         margin-top: 5px;
-        font-size: 18px;
+        font-size: $small-text;
     }
 }
 

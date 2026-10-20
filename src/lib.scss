@@ -9,13 +9,18 @@ $color-lightBlue: #8ACFE5;
 // text styles
 $font-weight: bold;
 $font-style: italic;
-$big-text: 24px;
-$small-text: 16px;
+
+$large-text: 32px;
+$medium-text: 24px;
+$small-text: 18px;
+
 $big-padding: 12px 45px;
 $small-padding: 9px 28px;
 
+
+
 // mixins
-@mixin btn($border: $color-red, $bg: $color-red, $text: $color-light, $size: $big-text, $padding: $big-padding) {
+@mixin btn($border: $color-red, $bg: $color-red, $text: $color-light, $size: $medium-text, $padding: $big-padding) {
     border: 1px solid $border;
     background-color: $bg;
     color: $text;
@@ -45,7 +50,7 @@ $small-padding: 9px 28px;
     }
 
     &--book {
-        @include btn($size: $small-text, $padding: $small-padding);
+        @include btn($size: 16px, $padding: $small-padding);
         align-self: flex-end;
     }
 

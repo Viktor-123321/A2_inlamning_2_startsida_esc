@@ -1,0 +1,23 @@
+@use '../lib.scss' as *;
+
+.footer {
+    @include flex-base(column, $align: flex-start);
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: $color-dark;
+    color: $color-light;
+    font-size: $small-text;
+
+    &__header {
+        font-size: $small-text;
+        margin-bottom: 7px;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__item--top-space {
+        margin-top: 20px;
+    }
+}

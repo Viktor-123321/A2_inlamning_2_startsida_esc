@@ -1,0 +1,15 @@
+@use '../../lib.scss' as *;
+
+.story {
+    height: 500px;
+    text-align: center;
+    @include flex-base(column, center, center);
+    gap: 10px;
+    background-color: $color-dark;
+
+    &__text {
+        color: $color-light;
+        padding: 10px 10px 40px;
+        font-size: 28px;
+    }
+}
