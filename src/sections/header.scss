@@ -5,8 +5,7 @@
     color: $color-light;
     font-weight: $font-weight;
     padding: 1.6rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex-base(column, $align: flex-start);
 }
 
 .logo {
@@ -21,12 +20,18 @@
 
     &__header {
         font-size: $medium-text;
-        width: 78px;
+        max-width: 78px;
+
+        @include media-qr($min-width: 600px) {
+            max-width: none;
+            align-self: flex-end;
+            font-size: 40px;
+        }
     }
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 7px;
     margin-top: 7px;
@@ -42,4 +47,22 @@
 
 .nav {
     display: none;
+    width: 100%;
+
+    &__list {
+        width: 100%;
+        @include flex-base;
+        gap: 115px;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    @include media-qr($min-width: 900px) {
+            display: block;
+            padding-top: 50px;
+            font-size: $medium-text;
+            font-weight: $font-weight;
+        }
 }

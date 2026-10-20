@@ -1,6 +1,6 @@
 .btn {
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 3px;
   display: inline-block;
 }
 .btn--primary {
@@ -16,6 +16,7 @@
   color: #011827;
   font-size: 24px;
   padding: 12px 45px;
+  order: 1;
 }
 .btn--book {
   border: 1px solid #E3170A;
@@ -39,7 +40,9 @@
   font-weight: bold;
   padding: 1.6rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -53,11 +56,18 @@
 }
 .logo__header {
   font-size: 24px;
-  width: 78px;
+  max-width: 78px;
+}
+@media screen and (min-width: 600px) {
+  .logo__header {
+    max-width: none;
+    align-self: flex-end;
+    font-size: 40px;
+  }
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 7px;
   margin-top: 7px;
@@ -72,19 +82,66 @@
 
 .nav {
   display: none;
+  width: 100%;
+}
+.nav__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 115px;
+}
+.nav__item {
+  list-style-type: none;
+}
+@media screen and (min-width: 900px) {
+  .nav {
+    display: block;
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 .hero__img {
   width: 100%;
+  height: 274px;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (min-width: 800px) {
+  .hero__img {
+    height: 468px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .hero {
+    position: relative;
+  }
 }
 
 .quotes {
   margin: 70px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .quote-card {
   display: flex;
   gap: 25px;
+  max-width: 522px;
 }
 .quote-card__img {
   width: 73px;
@@ -98,9 +155,19 @@
   margin-top: 5px;
   font-size: 18px;
 }
-
+@media screen and (min-width: 800px) {
+  .quote-card__author {
+    width: 70%;
+    margin-top: 12px;
+  }
+}
 .quote-card:nth-child(even) {
   display: none;
+}
+@media screen and (min-width: 800px) {
+  .quote-card:nth-child(even) {
+    display: flex;
+  }
 }
 
 .popular-challenges__header {
@@ -119,6 +186,14 @@
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
+}
+@media screen and (min-width: 1240px) {
+  .popular-challenges__card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .challenge-card {
@@ -168,10 +243,6 @@
   margin-bottom: 25px;
 }
 
-.challenge-card:nth-child(3) {
-  display: none;
-}
-
 .story {
   height: 500px;
   text-align: center;
@@ -186,6 +257,7 @@
   color: #ffffff;
   padding: 10px 10px 40px;
   font-size: 28px;
+  max-width: 600px;
 }
 
 .play {
@@ -245,7 +317,6 @@
 
 html {
   font-size: 16px;
-  width: 480px;
 }
 
 body {
@@ -262,6 +333,38 @@ body {
 }
 .challenge-links__online {
   color: #36769D;
+  order: 3;
+}
+@media screen and (min-width: 800px) {
+  .challenge-links__online {
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #E3170A;
+    background-color: #E3170A;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 12px 45px;
+    order: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .challenge-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 60px 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .challenge-links--position {
+    position: relative;
+    bottom: 30px;
+    margin: 0 0 37px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

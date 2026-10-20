@@ -15,7 +15,6 @@
 
 html {
     font-size: 16px;
-    width: 480px;
 }
 
 body {
@@ -29,5 +28,29 @@ body {
 
     &__online {
         color: $color-blue;
+        order: 3;
+
+        @include media-qr {
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            text-decoration: none;
+            @include btn-style;
+            order: 0;
+        }
+    }
+
+    @include media-qr {
+        @include flex-base;
+        gap: 12px;
+        margin: 60px 0;
+    }
+
+    &--position {
+        @include media-qr {
+            position: relative;
+            bottom: 30px;
+            margin: 0 0 37px;
+        }
     }
 }

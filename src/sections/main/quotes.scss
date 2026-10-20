@@ -2,19 +2,22 @@
 
 .quotes {
     margin: 70px 20px;
+    @include flex-base;
+
+    @include media-qr {
+        @include flex-base;
+        gap: 10px;
+    }
 }
 
 .quote-card {
     display: flex;
     gap: 25px;
+    max-width: 522px;
 
     &__img {
         width: 73px;
         height: 72px;
-    }
-
-    &__text {
-        
     }
 
     &__quote {
@@ -25,9 +28,18 @@
     &__author {
         margin-top: 5px;
         font-size: $small-text;
-    }
-}
 
-.quote-card:nth-child(even) {
-    display: none;
+        @include media-qr {
+            width: 70%;
+            margin-top: 12px;
+        }
+    }
+
+    &:nth-child(even) {
+        display: none;
+
+        @include media-qr {
+            display: flex;
+        }
+    }
 }

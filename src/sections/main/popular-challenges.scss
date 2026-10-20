@@ -15,6 +15,10 @@
         overflow-x: auto;
         overflow-y: hidden;
         scrollbar-width: none;
+
+        @include media-qr($min-width: 1240px) {
+            @include flex-base;
+        }
     }
 }
 
@@ -64,8 +68,4 @@
         font-size: $small-text;
         margin-bottom: 25px;
     }
-}
-
-.challenge-card:nth-child(3) {
-    display: none;
 }

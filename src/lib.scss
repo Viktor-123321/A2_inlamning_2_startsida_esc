@@ -20,7 +20,7 @@ $small-padding: 9px 28px;
 
 
 // mixins
-@mixin btn($border: $color-red, $bg: $color-red, $text: $color-light, $size: $medium-text, $padding: $big-padding) {
+@mixin btn-style($border: $color-red, $bg: $color-red, $text: $color-light, $size: $medium-text, $padding: $big-padding) {
     border: 1px solid $border;
     background-color: $bg;
     color: $text;
@@ -35,27 +35,33 @@ $small-padding: 9px 28px;
     align-items: $align;
 }
 
+@mixin media-qr($min-width: 800px) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}
+
 // buttons
 .btn {
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 3px;
     display: inline-block;
 
     &--primary {
-        @include btn;
+        @include btn-style;
     }
 
     &--on-site {
-        @include btn($color-lightBlue, $color-lightBlue, $color-dark);
+        @include btn-style($color-lightBlue, $color-lightBlue, $color-dark);
+        order: 1;
     }
 
     &--book {
-        @include btn($size: 16px, $padding: $small-padding);
+        @include btn-style($size: 16px, $padding: $small-padding);
         align-self: flex-end;
     }
 
     &--story {
-        @include btn($color-lightBlue, $color-dark, $color-lightBlue);
-
+        @include btn-style($color-lightBlue, $color-dark, $color-lightBlue);
     }
 }
