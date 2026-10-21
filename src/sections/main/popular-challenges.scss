@@ -16,7 +16,7 @@
         overflow-y: hidden;
         scrollbar-width: none;
 
-        @include media-qr($min-width: 1240px) {
+        @include media-qr(1240px) {
             @include flex-base;
         }
     }

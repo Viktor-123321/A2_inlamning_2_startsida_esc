@@ -3,20 +3,61 @@
 .play {
     @include flex-base(column);
     margin-bottom: 20px;
+    width: 100%;
+    @include media-qr(900px) {
+        margin-bottom: 120px;
+    }
+
+    &__item {
+        width: 100%;
+
+        @include media-qr(900px) {
+            @include flex-base;
+        }
+    }
 
     &__img {
         width: 100%;
+
+        @include media-qr(900px) {
+            width: 50%;
+            height: 460px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__img--reversed {
+        @include media-qr(900px) {
+            order: 1
+        }
     }
 
     &__header {
         font-size: $large-text;
     }
 
+    &__info-wrapper {
+        @include media-qr(900px) {
+            width: 50%;
+        }
+    }
+
     &__info {
-        min-height: 300px;
         @include flex-base(column, space-between, flex-start);
         gap: 15px;
         padding: 20px 20px 50px;
+
+        @include media-qr(900px) {
+            width: 460px;
+            margin: auto;
+        }
+    }
+
+    &__info--reversed {
+        @include media-qr(900px) {
+            order: 0;
+        }
     }
 
     &__text {
