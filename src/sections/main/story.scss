@@ -1,16 +1,16 @@
 @use '../../lib.scss' as *;
 
 .story {
-    height: 500px;
+    height: 31.25rem;
     text-align: center;
     @include flex-base(column, center, center);
-    gap: 10px;
+    gap: 0.6rem;
     background-color: $color-dark;
 
     &__text {
         color: $color-light;
-        padding: 10px 10px 40px;
-        font-size: 28px;
-        max-width: 600px;
+        padding: 0.6rem 0.6rem 2.5rem;
+        font-size: 1.75rem;
+        max-width: 37.5rem;
     }
 }

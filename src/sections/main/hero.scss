@@ -3,12 +3,12 @@
 .hero {
     &__img {
         width: 100%;
-        height: 274px;
+        height: 17.1rem;
         object-fit: cover;
         object-position: center;
 
         @include media-qr {
-            height: 468px;
+            height: 29.25rem;
         }
     }
 

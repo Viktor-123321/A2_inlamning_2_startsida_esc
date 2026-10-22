@@ -2,10 +2,10 @@
 
 .play {
     @include flex-base(column);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     width: 100%;
     @include media-qr(900px) {
-        margin-bottom: 120px;
+        margin-bottom: 7.5rem;
     }
 
     &__item {
@@ -21,7 +21,7 @@
 
         @include media-qr(900px) {
             width: 50%;
-            height: 460px;
+            height: 28.75rem;
             object-fit: cover;
             object-position: center;
         }
@@ -45,11 +45,11 @@
 
     &__info {
         @include flex-base(column, space-between, flex-start);
-        gap: 15px;
-        padding: 20px 20px 50px;
+        gap: 0.95rem;
+        padding: 1.25rem 1.25rem 3.1rem;
 
         @include media-qr(900px) {
-            width: 460px;
+            width: 28.75rem;
             margin: auto;
         }
     }
@@ -62,10 +62,10 @@
 
     &__text {
         font-size: $medium-text;
-        margin-bottom: 30px;
+        margin-bottom: 1.9rem;
 
         @include media-qr(900px) {
-            margin-bottom: 15px;
+            margin-bottom: 0.95rem;
         }
     }
 }

@@ -1,27 +1,27 @@
 @use '../../lib.scss' as *;
 
 .quotes {
-    margin: 70px 20px;
+    margin: 4.4rem 1.25rem;
     @include flex-base;
 
     @include media-qr {
         @include flex-base;
-        gap: 15px;
+        gap: 0.95rem;
     }
 }
 
 .quote-card {
     display: flex;
-    gap: 25px;
-    max-width: 540px;
+    gap: 1.55rem;
+    max-width: 33.75rem;
 
     &__img {
-        width: 73px;
-        height: 72px;
+        width: 4.55rem;
+        height: 4.5rem;
 
         @include media-qr {
-            width: 96px;
-            height: 96px;
+            width: 6rem;
+            height: 6rem;
         }
     }
 
@@ -31,12 +31,12 @@
     }
 
     &__author {
-        margin-top: 5px;
+        margin-top: 0.3rem;
         font-size: $small-text;
 
         @include media-qr {
             width: 70%;
-            margin-top: 12px;
+            margin-top: 0.75rem;
         }
     }
 

@@ -11,21 +11,21 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 0.19rem;
 
     &__img {
-        width: 128px;
-        height: 82px;
+        width: 8rem;
+        height: 5.1rem;
     }
 
     &__header {
         font-size: $medium-text;
-        max-width: 78px;
+        max-width: 4.9rem;
 
         @include media-qr($min-width: 600px) {
             max-width: none;
             align-self: flex-end;
-            font-size: 40px;
+            font-size: 2.5rem;
         }
     }
 }
@@ -33,15 +33,15 @@
 .hamburger {
     display: none;
     flex-direction: column;
-    gap: 7px;
-    margin-top: 7px;
-    width: 51px;
-    height: 35px;
+    gap: 0.44rem;
+    margin-top: 0.44rem;
+    width: 3.2rem;
+    height: 2.2rem;
 
     &__line {
-        height: 7px;
+        height: 0.44rem;
         background-color: $color-light;
-        border-radius: 15px;
+        border-radius: 0.95rem;
     }
 }
 
@@ -52,7 +52,7 @@
     &__list {
         width: 100%;
         @include flex-base;
-        gap: 115px;
+        gap: 7.2rem;
     }
 
     &__item {
@@ -61,7 +61,7 @@
 
     @include media-qr($min-width: 900px) {
         display: block;
-        padding-top: 50px;
+        padding-top: 3.1rem;
         font-size: $medium-text;
         font-weight: $font-weight;
     }

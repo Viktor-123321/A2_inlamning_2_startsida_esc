@@ -10,18 +10,18 @@ $color-lightBlue: #8ACFE5;
 $font-weight: bold;
 $font-style: italic;
 
-$large-text: 32px;
-$medium-text: 24px;
-$small-text: 18px;
+$large-text: 2rem;
+$medium-text: 1.5rem;
+$small-text: 1.125rem;
 
-$big-padding: 12px 45px;
-$small-padding: 9px 28px;
+$big-padding: 0.75rem 2.81rem;
+$small-padding: 0.56rem 1.75rem;
 
 
 
 // mixins
 @mixin btn-style($border: $color-red, $bg: $color-red, $text: $color-light, $size: $medium-text, $padding: $big-padding) {
-    border: 1px solid $border;
+    border: 0.063rem solid $border;
     background-color: $bg;
     color: $text;
     font-size: $size;

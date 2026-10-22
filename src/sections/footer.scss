@@ -3,8 +3,8 @@
 .footer {
     @include flex-base(column, $align: flex-start);
     width: 100%;
-    gap: 40px;
-    padding: 60px 20px;
+    gap: 2.5rem;
+    padding: 3.75rem 1.25rem;
     background-color: $color-dark;
     color: $color-light;
     font-size: $small-text;
@@ -23,11 +23,11 @@
 
     &__header {
         font-size: $small-text;
-        margin-bottom: 7px;
+        margin-bottom: 0.44rem;
     }
 
     &__info-text {
-        max-width: 550px;
+        max-width: 34.4rem;
 
         @include media-qr(900px) {
             
@@ -39,11 +39,11 @@
     }
 
     &__item--top-space {
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 
     @include media-qr(900px) {
         @include flex-base(row, space-evenly, flex-start);
-        padding: 120px 40px;
+        padding: 7.5rem 2.5rem;
     }
 }

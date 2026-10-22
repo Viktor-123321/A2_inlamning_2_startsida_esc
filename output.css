@@ -12,36 +12,36 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 0.19rem;
 }
 .logo__img {
-  width: 128px;
-  height: 82px;
+  width: 8rem;
+  height: 5.1rem;
 }
 .logo__header {
-  font-size: 24px;
-  max-width: 78px;
+  font-size: 1.5rem;
+  max-width: 4.9rem;
 }
 @media screen and (min-width: 600px) {
   .logo__header {
     max-width: none;
     align-self: flex-end;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 7px;
-  margin-top: 7px;
-  width: 51px;
-  height: 35px;
+  gap: 0.44rem;
+  margin-top: 0.44rem;
+  width: 3.2rem;
+  height: 2.2rem;
 }
 .hamburger__line {
-  height: 7px;
+  height: 0.44rem;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 0.95rem;
 }
 
 .nav {
@@ -54,7 +54,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 115px;
+  gap: 7.2rem;
 }
 .nav__item {
   list-style-type: none;
@@ -62,21 +62,21 @@
 @media screen and (min-width: 900px) {
   .nav {
     display: block;
-    padding-top: 50px;
-    font-size: 24px;
+    padding-top: 3.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 }
 
 .hero__img {
   width: 100%;
-  height: 274px;
+  height: 17.1rem;
   object-fit: cover;
   object-position: center;
 }
 @media screen and (min-width: 800px) {
   .hero__img {
-    height: 468px;
+    height: 29.25rem;
   }
 }
 @media screen and (min-width: 800px) {
@@ -86,7 +86,7 @@
 }
 
 .quotes {
-  margin: 70px 20px;
+  margin: 4.4rem 1.25rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,37 +98,37 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 0.95rem;
   }
 }
 
 .quote-card {
   display: flex;
-  gap: 25px;
-  max-width: 540px;
+  gap: 1.55rem;
+  max-width: 33.75rem;
 }
 .quote-card__img {
-  width: 73px;
-  height: 72px;
+  width: 4.55rem;
+  height: 4.5rem;
 }
 @media screen and (min-width: 800px) {
   .quote-card__img {
-    width: 96px;
-    height: 96px;
+    width: 6rem;
+    height: 6rem;
   }
 }
 .quote-card__quote {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: italic;
 }
 .quote-card__author {
-  margin-top: 5px;
-  font-size: 18px;
+  margin-top: 0.3rem;
+  font-size: 1.125rem;
 }
 @media screen and (min-width: 800px) {
   .quote-card__author {
     width: 70%;
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
 }
 .quote-card:nth-child(even) {
@@ -144,11 +144,11 @@
   text-align: center;
   font-size: 2rem;
   font-weight: normal;
-  margin-bottom: 42px;
+  margin-bottom: 2.6rem;
 }
 @media screen and (min-width: 1280px) {
   .popular-challenges__header {
-    margin: 84px 0;
+    margin: 5.25rem 0;
   }
 }
 .popular-challenges__card-wrapper {
@@ -156,8 +156,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 38px;
-  padding: 0 50px;
+  gap: 2.4rem;
+  padding: 0 3.1rem;
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
@@ -172,16 +172,16 @@
 }
 
 .challenge-card {
-  width: 363px;
-  height: 446px;
-  flex: 0 0 363px;
+  width: 22.7rem;
+  height: 27.9rem;
+  flex: 0 0 22.7rem;
   border-radius: 0.5rem;
-  border: 2px solid rgb(231, 229, 229);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  border: 0.13rem solid rgb(231, 229, 229);
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.25);
 }
 .challenge-card__img {
   width: 100%;
-  height: 219px;
+  height: 13.7rem;
   border-radius: 0.5rem 0.5rem 0 0;
   object-fit: cover;
 }
@@ -190,7 +190,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 12px;
+  padding: 0.75rem;
 }
 .challenge-card__header {
   font-size: 1.75rem;
@@ -199,41 +199,41 @@
 }
 .challenge-card__details {
   width: 100%;
-  margin: 5px 0 25px;
+  margin: 0.3rem 0 1.55rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 .challenge-card__star {
-  width: 12px;
-  height: 13px;
-  margin: 0 4px;
+  width: 0.75rem;
+  height: 0.8rem;
+  margin: 0 0.25rem;
 }
 .challenge-card__participants {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .challenge-card__description {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 1.125rem;
+  margin-bottom: 1.55rem;
 }
 
 .story {
-  height: 500px;
+  height: 31.25rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
   background-color: #011827;
 }
 .story__text {
   color: #ffffff;
-  padding: 10px 10px 40px;
-  font-size: 28px;
-  max-width: 600px;
+  padding: 0.6rem 0.6rem 2.5rem;
+  font-size: 1.75rem;
+  max-width: 37.5rem;
 }
 
 .play {
@@ -241,12 +241,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 100%;
 }
 @media screen and (min-width: 900px) {
   .play {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
   }
 }
 .play__item {
@@ -266,7 +266,7 @@
 @media screen and (min-width: 900px) {
   .play__img {
     width: 50%;
-    height: 460px;
+    height: 28.75rem;
     object-fit: cover;
     object-position: center;
   }
@@ -277,7 +277,7 @@
   }
 }
 .play__header {
-  font-size: 32px;
+  font-size: 2rem;
 }
 @media screen and (min-width: 900px) {
   .play__info-wrapper {
@@ -289,12 +289,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px;
-  padding: 20px 20px 50px;
+  gap: 0.95rem;
+  padding: 1.25rem 1.25rem 3.1rem;
 }
 @media screen and (min-width: 900px) {
   .play__info {
-    width: 460px;
+    width: 28.75rem;
     margin: auto;
   }
 }
@@ -304,12 +304,12 @@
   }
 }
 .play__text {
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 1.9rem;
 }
 @media screen and (min-width: 900px) {
   .play__text {
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem;
   }
 }
 
@@ -319,11 +319,11 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  gap: 40px;
-  padding: 60px 20px;
+  gap: 2.5rem;
+  padding: 3.75rem 1.25rem;
   background-color: #011827;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media screen and (min-width: 900px) {
   .footer__site-info {
@@ -331,17 +331,17 @@
   }
 }
 .footer__header {
-  font-size: 18px;
-  margin-bottom: 7px;
+  font-size: 1.125rem;
+  margin-bottom: 0.44rem;
 }
 .footer__info-text {
-  max-width: 550px;
+  max-width: 34.4rem;
 }
 .footer__item {
   list-style-type: none;
 }
 .footer__item--top-space {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 900px) {
   .footer {
@@ -349,7 +349,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 120px 40px;
+    padding: 7.5rem 2.5rem;
   }
 }
 
@@ -362,6 +362,16 @@
 html {
   font-size: 16px;
 }
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
@@ -372,8 +382,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
-  margin: 37px 0;
+  gap: 1.87rem;
+  margin: 2.3rem 0;
 }
 .challenge-links__online {
   color: #36769D;
@@ -382,14 +392,14 @@ body {
 @media screen and (min-width: 800px) {
   .challenge-links__online {
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #E3170A;
+    border: 0.063rem solid #E3170A;
     background-color: #E3170A;
     color: #ffffff;
-    font-size: 24px;
-    padding: 12px 45px;
+    font-size: 1.5rem;
+    padding: 0.75rem 2.81rem;
     order: 0;
   }
 }
@@ -399,52 +409,52 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    margin: 80px 0;
+    gap: 0.75rem;
+    margin: 5rem 0;
   }
 }
 @media screen and (min-width: 800px) {
   .challenge-links--position {
     position: relative;
-    bottom: 30px;
-    margin: 0 0 37px;
+    bottom: 1.87rem;
+    margin: 0 0 2.3rem;
   }
 }
 
 .btn {
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 0.19rem;
   display: inline-block;
 }
 .btn--primary {
-  border: 1px solid #E3170A;
+  border: 0.063rem solid #E3170A;
   background-color: #E3170A;
   color: #ffffff;
-  font-size: 24px;
-  padding: 12px 45px;
+  font-size: 1.5rem;
+  padding: 0.75rem 2.81rem;
 }
 .btn--on-site {
-  border: 1px solid #8ACFE5;
+  border: 0.063rem solid #8ACFE5;
   background-color: #8ACFE5;
   color: #011827;
-  font-size: 24px;
-  padding: 12px 45px;
+  font-size: 1.5rem;
+  padding: 0.75rem 2.81rem;
   order: 1;
 }
 .btn--book {
-  border: 1px solid #E3170A;
+  border: 0.063rem solid #E3170A;
   background-color: #E3170A;
   color: #ffffff;
-  font-size: 16px;
-  padding: 9px 28px;
+  font-size: 1rem;
+  padding: 0.56rem 1.75rem;
   align-self: flex-end;
 }
 .btn--story {
-  border: 1px solid #8ACFE5;
+  border: 0.063rem solid #8ACFE5;
   background-color: #011827;
   color: #8ACFE5;
-  font-size: 24px;
-  padding: 12px 45px;
+  font-size: 1.5rem;
+  padding: 0.75rem 2.81rem;
 }
 
 /*# sourceMappingURL=output.css.map */
