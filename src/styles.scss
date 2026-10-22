@@ -43,7 +43,7 @@ body {
     @include media-qr {
         @include flex-base;
         gap: 12px;
-        margin: 60px 0;
+        margin: 80px 0;
     }
 
     &--position {
@@ -52,5 +52,30 @@ body {
             bottom: 30px;
             margin: 0 0 37px;
         }
+    }
+}
+
+// buttons
+.btn {
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+
+    &--primary {
+        @include btn-style;
+    }
+
+    &--on-site {
+        @include btn-style($color-lightBlue, $color-lightBlue, $color-dark);
+        order: 1;
+    }
+
+    &--book {
+        @include btn-style($size: 16px, $padding: $small-padding);
+        align-self: flex-end;
+    }
+
+    &--story {
+        @include btn-style($color-lightBlue, $color-dark, $color-lightBlue);
     }
 }

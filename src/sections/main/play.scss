@@ -63,5 +63,9 @@
     &__text {
         font-size: $medium-text;
         margin-bottom: 30px;
+
+        @include media-qr(900px) {
+            margin-bottom: 15px;
+        }
     }
 }

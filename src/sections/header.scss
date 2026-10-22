@@ -60,9 +60,9 @@
     }
 
     @include media-qr($min-width: 900px) {
-            display: block;
-            padding-top: 50px;
-            font-size: $medium-text;
-            font-weight: $font-weight;
-        }
+        display: block;
+        padding-top: 50px;
+        font-size: $medium-text;
+        font-weight: $font-weight;
+    }
 }

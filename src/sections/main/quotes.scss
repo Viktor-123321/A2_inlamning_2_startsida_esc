@@ -6,18 +6,23 @@
 
     @include media-qr {
         @include flex-base;
-        gap: 10px;
+        gap: 15px;
     }
 }
 
 .quote-card {
     display: flex;
     gap: 25px;
-    max-width: 522px;
+    max-width: 540px;
 
     &__img {
         width: 73px;
         height: 72px;
+
+        @include media-qr {
+            width: 96px;
+            height: 96px;
+        }
     }
 
     &__quote {
