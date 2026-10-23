@@ -57,6 +57,10 @@
         margin: 0.3rem 0 1.55rem;
         @include flex-base($justify: flex-start);
         gap: 0.6rem;
+
+        @include media-qr(1280px) {
+            @include flex-base($justify: space-between);
+        }
     }
 
     &__star {

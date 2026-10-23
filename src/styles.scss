@@ -37,6 +37,7 @@ body {
     &__online {
         color: $color-blue;
         order: 3;
+        cursor: pointer;
 
         @include media-qr {
             font-weight: bold;
@@ -68,6 +69,7 @@ body {
     font-weight: bold;
     border-radius: 0.19rem;
     display: inline-block;
+    cursor: pointer;
 
     &--primary {
         @include btn-style;
