@@ -60,7 +60,7 @@
   list-style-type: none;
   cursor: pointer;
 }
-.nav__link--color-change {
+.nav__link:hover {
   color: #8ACFE5;
 }
 @media screen and (min-width: 900px) {

@@ -60,7 +60,7 @@
         cursor: pointer;
     }
 
-    &__link--color-change {
+    &__link:hover {
         color: $color-lightBlue;
     }
 
