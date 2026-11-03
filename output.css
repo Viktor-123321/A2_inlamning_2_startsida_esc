@@ -4,9 +4,17 @@
   font-weight: bold;
   padding: 1.6rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
+}
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .logo {
@@ -22,7 +30,7 @@
   font-size: 1.5rem;
   max-width: 4.9rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .logo__header {
     max-width: none;
     align-self: flex-end;
@@ -31,7 +39,7 @@
 }
 
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 0.44rem;
   margin-top: 0.44rem;
@@ -42,6 +50,11 @@
   height: 0.44rem;
   background-color: #ffffff;
   border-radius: 0.95rem;
+}
+@media screen and (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .nav {

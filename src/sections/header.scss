@@ -5,7 +5,11 @@
     color: $color-light;
     font-weight: $font-weight;
     padding: 1.6rem;
-    @include flex-base(column, $align: flex-start);
+    @include flex-base($justify: space-between, $align: flex-start);
+
+    @include media-qr($min-width: 900px) {
+        @include flex-base(column, $align: flex-start);
+    }
 }
 
 .logo {
@@ -22,7 +26,7 @@
         font-size: $medium-text;
         max-width: 4.9rem;
 
-        @include media-qr($min-width: 600px) {
+        @include media-qr($min-width: 900px) {
             max-width: none;
             align-self: flex-end;
             font-size: 2.5rem;
@@ -31,7 +35,7 @@
 }
 
 .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.44rem;
     margin-top: 0.44rem;
@@ -42,6 +46,10 @@
         height: 0.44rem;
         background-color: $color-light;
         border-radius: 0.95rem;
+    }
+
+    @include media-qr($min-width: 900px) {
+        display: none;
     }
 }
 
