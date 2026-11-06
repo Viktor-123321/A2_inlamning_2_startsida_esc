@@ -29,6 +29,19 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
 }
 
+.body--blur > .header > .logo,
+.body--blur > .main,
+.body--blur > .footer {
+    opacity: 0.5;
+    transition: opacity 0.5s ease 0.1s;
+}
+
+.body--blur > .header {
+    background-color: #011827aa;
+    transition: background-color 0.5s ease 0.1s;
+    border-bottom: 1px solid $color-dark;
+}
+
 .challenge-links {
     @include flex-base(column, flex-start);
     gap: 1.87rem;
