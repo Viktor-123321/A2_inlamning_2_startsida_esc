@@ -63,7 +63,7 @@
 
     &__cross {
     background-color: $color-dark;
-    color: $color-light;
+    color: $color-light !important;
     border: none;
     font-family: cursive;
     font-size: 2rem;
@@ -99,6 +99,9 @@
 }
 
 .nav {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     @include media-max(899px) {
         z-index: 1;
         position: absolute;
@@ -128,6 +131,10 @@
         padding-top: 3.1rem;
         font-size: $medium-text;
         font-weight: $font-weight;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: none;
 
         &__list {
         width: 100%;
@@ -146,8 +153,9 @@
     }
 }
 
-.nav--remove {
-    @include media-max(899px) {
-        display: none;
-    }
+.nav:not(.nav--remove) {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.8s ease;
 }
